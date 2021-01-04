@@ -3,11 +3,29 @@ body{
     margin: 0;
 }
 
+section{
+    height: 500px;
+    padding-bottom: 100px;
+}
+
 h1{
     font-size: 40px;
 }
 
-.aj-color{
+h2{
+    font-size: 40px;
+}
+
+p{
+    color: dimgray;
+}
+
+footer p{
+    text-align: center;
+    font-size: 15px;
+}
+
+.text-colors{
     color: yellowgreen;
 }
 
@@ -19,16 +37,12 @@ h1{
 }
 
 .half-width img{
-    width: 60%;
+    width: 50%;
 }
 
 .top-banner{
     background-image: url(../img/developer-portfolio/top-banner.png);
     background-repeat: no-repeat;
-}
-
-section{
-    height: 500px;
 }
 
 .button{
@@ -38,4 +52,35 @@ section{
     border-radius: 10px;
     color: white;
     font-weight: 700;
+}
+
+.middle-jinish{
+    background-image: url(../img/developer-portfolio/dream-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.bottom-jinish{
+    background-image: url(../img/developer-portfolio/exp-bg.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: white;
+}
+
+.box{
+    box-shadow: 10px 10px 40px grey;
+    border-radius: 10px;
+    height: 50%;
+}
+
+#full-web{
+    border-left: 7px solid;
+    border-image: linear-gradient(180deg, chocolate, orange);
+    border-image-slice: 1;
+}
+
+#data-science{
+    border-left: 7px solid;
+    border-image: linear-gradient(180deg, blue, cyan);
+    border-image-slice: 1;
 }
