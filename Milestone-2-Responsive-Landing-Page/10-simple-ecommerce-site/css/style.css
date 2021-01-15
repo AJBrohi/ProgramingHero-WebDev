@@ -1,0 +1,17 @@
+.subscribe-container{
+    height: 500px;
+}
+
+.no-border{
+    border: 0;
+}
+
+.categories img{
+    height: 100px;
+    width: 100px;
+}
+
+.bg-bd .carousel-item{
+    background-color: #fceae8;
+    border-radius: 1em;
+}

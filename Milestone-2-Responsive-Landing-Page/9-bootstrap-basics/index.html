@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Added with internet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+    <!-- Added with locally
+    <link rel="stylesheet" href="../../../Bootstrap/css/bootstrap.min.css"> -->
+
+    <link rel="stylesheet" href="style.css">
+    <title>Bootstrap Basics</title>
+    <script src="../../../Bootstrap/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <h1>Hello Bootstrap!</h1>
+    <p>It's time to use bootstrap. <a href="#bottom">Bottom</a></p>
+    <section>
+        <h2>9-1: Button</h2>
+        <button>Button without Bootstrap</button>
+        <button class="btn btn-primary">Primary Button</button>
+        <button class="btn btn-secondary">Primary Button</button>
+        <button class="btn btn-warning">Primary Button</button>
+    </section>
+    <section>
+        <h2>9-2: Text Color</h2>
+        <p>Paragraph without bootstrap</p>
+        <p class="text-primary">Primary Text</p>
+        <p class="text-danger">Danger Text</p>
+        <p class="text-success">Success Text</p>
+    </section>
+    <section>
+        <h2>9-3: Image</h2>
+        <p>Image without Bootstrap</p>
+        <img class="img-width" src="img/old man.jpg" alt="">
+        <p>Image with img-fluid (for 100% picture in width ) w-25 (for 25% width) w-thumbnail (for look like thumbnail
+            with white border) class</p>
+        <img class="img-width img-fluid img-thumbnail w-25" src="img/old man.jpg" alt="">
+        <img class="img-width img-fluid img-thumbnail w-25" src="img/girl.jpg" alt="">
+    </section>
+    <section>
+        <h2>9-4: Card</h2>
+        <p>A single card with bootstrap</p>
+
+        <div class="card" style="width: 18rem;">
+            <img src="img/girl.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <p>A card group</p>
+
+        <div class="card-group">
+            <div class="card">
+                <img src="img/old man.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/girl.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
+                    </p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/old man.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This card has even longer content than the first to show that equal height
+                        action.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>9-5: Navbar</h2>
+        <p>Nav without Bootstrap by using ul and li with some styles</p>
+        <div class="without-boot">
+            <ul>
+                <li><a href="">First</a></li>
+                <li><a href="">Second</a></li>
+                <li><a href="">Third</a></li>
+            </ul>
+        </div>
+
+        <p>Nav with Bootstrap</p>
+        <ul class="nav">
+            <li class="nav-item"><a href="" class="nav-link">First</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Second</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Third</a></li>
+        </ul>
+
+        <p>A Navbar</p>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <h4>Image Slide</h4>
+        <div class="slide-container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/girl.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/old man.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/girl.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>9-6: Responsive</h2>
+        <div class="container">
+            <p>This is a bootstrap container using class="container"</p>
+        </div>
+    </section>
+    <section>
+        <h2>9-7: Responsive Grid</h2>
+        <p>by using the class name as class="contianer>row>col"</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4 p-2 border border-2 border-danger">
+                    This is first column
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 p-2 border border-2 border-primary">
+                    This is second column
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 p-2 border border-2 border-danger">
+                    This is third column
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>9-8: Flex Layout</h2>
+        <p>by using the class name as class="d-flex" and centering with class="align-items-center"</p>
+        <div class="d-flex justify-content-evenly align-items-center">
+            <div class="border border-2 border-primary">1</div>
+            <div class="border border-2 border-primary">2</div>
+            <div class="border border-2 border-primary">3</div>
+        </div>
+    </section>
+
+    <footer>
+        <p id="bottom">Its bottom</p>
+
+    </footer>
+</body>
+
+</html>

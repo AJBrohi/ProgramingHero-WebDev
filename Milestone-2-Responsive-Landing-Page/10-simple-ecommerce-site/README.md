@@ -1,0 +1,1 @@
+This is a simple e-commerce website made with Bootstrap.

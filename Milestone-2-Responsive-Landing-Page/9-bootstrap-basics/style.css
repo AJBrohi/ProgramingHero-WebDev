@@ -1,0 +1,31 @@
+section{
+    margin: 30px;
+}
+
+.img-width{
+    width: 400px;
+    height: 250px;
+}
+
+/* .card{
+    width: 400px;
+    height: 250px;
+} */
+
+.without-boot ul{
+    display: flex;
+}
+
+.without-boot li{
+    list-style: none;
+    margin-right:10px ;
+}
+
+.slide-container{
+    width: 500px;
+    height: 350px;
+}
+
+.container{
+    border: 3px solid black;
+}
