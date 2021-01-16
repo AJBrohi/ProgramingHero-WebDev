@@ -1,10 +1,17 @@
-h1, h2{
+h1{
+    font-size: 80px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+h2{
     font-family: 'Bebas Neue', cursive;
 }
 
 section{
     font-family: 'Roboto', sans-serif;
 }
+
+
 
 .header-container{
     width: 100%;
