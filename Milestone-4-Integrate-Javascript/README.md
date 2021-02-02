@@ -1,0 +1,1 @@
+This section is for Milestone 4 - Integrate Javascript. Here we will learn how to connect js with our website.
