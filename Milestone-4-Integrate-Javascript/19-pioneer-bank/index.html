@@ -33,23 +33,45 @@
                 <div class="col-md-4">
                     <div class="deposit status">
                         <h5>Deposit</h5>
-                        <h2>$00</h2>
+                        <h2>$ <span id="currentDeposit">00</span></h2>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="withdraw status">
                         <h5>Withdraw</h5>
-                        <h2>$00</h2>
+                        <h2>$ <span id="currentWithdraw">00</span></h2>
                     </div>
 
                 </div>
                 <div class="col-md-4">
                     <div class="balance status">
                         <h5>Balance</h5>
-                        <h2>$1200</h2>
+                        <h2>$ <span id="currentBalance">1200</span></h2>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section id="calculation-area">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="log-in">
+                        <h4>Deposit</h4>
+                        <input type="text" class="form-control" id="depositAmount" placeholder="$ amount you want to deposit">
+                        <br>
+                        <button class="btn btn-success" id="addDeposit">Deposit</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="log-in">
+                        <h4>Withdraw</h4>
+                        <input type="text" class="form-control" id="withdrawAmount" placeholder="$ amount you want to withdraw">
+                        <br>
+                        <button class="btn btn-success" id="addWithdraw">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
     </main>
@@ -59,14 +81,58 @@
     </footer>
 
     <script>
+        //login button event handler
         const loginBtn = document.getElementById('login');
-        loginBtn.addEventListener('click', function () {
+        loginBtn.addEventListener('click', function(){
             const loginArea = document.getElementById('login-area');
             loginArea.style.display = 'none';
 
-            const transactionArea = document.getElementById('transaction-area');
-            transactionArea.style.display = 'block';
+            // const transactionArea = document.getElementById('transaction-area');
+            // transactionArea.style.display = 'block';
+
+            // const calculationArea = document.getElementById('calculation-area')
+            // calculationArea.style.display = 'block';
+
+            let nextPage = document.querySelectorAll('#transaction-area, #calculation-area');
+            for(var i = 0;i<nextPage.length;i++){
+                nextPage[i].style.display='block';
+            }
         })
+
+        //deposit button event handler
+        const depositButton = document.getElementById("addDeposit");
+        depositButton.addEventListener('click', function(){
+            const depositNumber = getInput('depositAmount');
+
+            update('currentDeposit', depositNumber);
+            update('currentBalance', depositNumber);
+            document.getElementById('depositAmount').value = '';
+        })
+
+        function update(id, amountNumber){
+            const currentAmount = document.getElementById(id).innerText;
+            const currentAmountNumber = parseFloat(currentAmount);
+            let totalAmount = amountNumber + currentAmountNumber;
+
+            document.getElementById(id).innerText = totalAmount;
+        }
+
+        //withdraw button event handler
+        const withdrawButton = document.getElementById("addWithdraw");
+        withdrawButton.addEventListener('click', function(){
+            const withdrawNumber = getInput('withdrawAmount');
+
+            update('currentWithdraw', withdrawNumber);
+            update('currentBalance', -1 * withdrawNumber);
+            document.getElementById('withdrawAmount').value = '';
+        })
+
+        function getInput(id){
+            const amount = document.getElementById(id).value;
+            const amountNumber = parseFloat(amount);
+            return amountNumber;
+        }
+
     </script>
 </body>
 

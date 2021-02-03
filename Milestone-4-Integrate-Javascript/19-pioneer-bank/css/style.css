@@ -31,3 +31,7 @@ body{
     color: white;
     border-radius: 10px;
 }
+
+#calculation-area{
+    display: none;
+}
