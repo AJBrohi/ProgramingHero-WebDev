@@ -1,10 +1,10 @@
-function ticketUnitChange(ticketClass, isIncrease){
-    const ticketCount = getElementOf(ticketClass+'-class-input');
+function ticketUnitChange(ticketClass, isIncrease) {
+    const ticketCount = getElementOf(ticketClass + '-class-input');
     const ticketNumber = parseInt(ticketCount.value);
     const ticketNewNumber = countingTicket(ticketNumber, isIncrease);
     ticketCount.value = ticketNewNumber;
 
-    const price = getElementOf(ticketClass+'-class-price');
+    const price = getElementOf(ticketClass + '-class-price');
     price.innerText = changePrice(ticketClass, ticketNewNumber);
 
     totalPriceCalculation();
@@ -13,10 +13,10 @@ function ticketUnitChange(ticketClass, isIncrease){
 function countingTicket(ticketNumber, increase) {
     let ticketInNumber = 0;
     if (increase == true) {
-        ticketInNumber = ticketNumber+1;
+        ticketInNumber = ticketNumber + 1;
     }
-    if (increase == false && ticketInNumber > 0){
-        ticketInNumber = ticketNumber-1;
+    if (increase == false && ticketInNumber > 0) {
+        ticketInNumber = ticketNumber - 1;
     }
     return ticketInNumber;
 }
@@ -32,9 +32,9 @@ function changePrice(ticketClass, ticketNewNumber) {
 }
 
 function totalPriceCalculation() {
-    const firstClassTicketPriceNumber = getInt('first-class-price');    
+    const firstClassTicketPriceNumber = getInt('first-class-price');
     const economyClassTicketPriceNumber = getInt('economy-class-price');
-    
+
     const total = firstClassTicketPriceNumber + economyClassTicketPriceNumber;
     getElementOf('subtotal').innerText = total;
 
