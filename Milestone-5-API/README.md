@@ -1,0 +1,1 @@
+This section is for Milestone 5 - Intermediate Javascript & API. Here we will learn more about JS and also deploy API on our website.
