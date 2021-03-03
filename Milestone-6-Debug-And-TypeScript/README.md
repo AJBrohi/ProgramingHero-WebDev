@@ -1,0 +1,1 @@
+This section is for Milestone 6 - Debugging and TypeScript. Here we will learn about debugging and also know the basics of TypeScript.
