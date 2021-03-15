@@ -1,0 +1,16 @@
+.centering{
+    text-align: center;
+}
+
+.players{
+    margin-left: 20px;
+    padding-right: 10px;
+}
+
+.player-cards{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    flex-flow: row wrap;
+    flex: 150px;
+}
