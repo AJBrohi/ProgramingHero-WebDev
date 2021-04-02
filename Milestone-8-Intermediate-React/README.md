@@ -10,3 +10,8 @@ To build the react app to publish
 ```
 npm run build
 ```
+
+To add react router
+```
+npm install react-router-dom
+```
