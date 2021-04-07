@@ -1,0 +1,49 @@
+.top {
+    text-align: center;
+    height: 100%;
+}
+
+.top img{
+    height: 200px;
+}
+
+.bottom-first-half {
+    background-color: #3A42FF;
+    color: white;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.left{
+    margin: 20px;
+    text-align: left;
+}
+
+.right{
+    margin: 20px;
+    text-align: right;
+}
+
+.right img{
+    height: 100%;
+    width: 450px;
+}
+
+.bottom-second-half {
+    color: white;
+    text-align: justify;
+}
+
+.footer{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-top: 20px;
+    height: 100px;
+}
+
+.footer a{ 
+    margin-left: 10px;
+}
