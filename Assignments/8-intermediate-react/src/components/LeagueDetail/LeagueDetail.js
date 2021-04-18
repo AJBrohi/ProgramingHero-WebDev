@@ -34,7 +34,6 @@ const LeagueDetail = () => {
             .then(data => setLeagueDetail(data.leagues[0]))
     }, [lid])
 
-    const imgSource = (leagueDetail.strGender === 'Male') ? {male} : {female};
     return (
         <div className={classes.root}>
             <Grid container spacing={3}>
