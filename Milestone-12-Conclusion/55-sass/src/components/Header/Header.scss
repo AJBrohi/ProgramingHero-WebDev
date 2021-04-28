@@ -1,0 +1,24 @@
+/* title{
+    color: red;
+} */
+@import '../../styles/shared/color.scss';
+
+.first-box{
+    border: 1px solid $primary-color;
+    color: $text-important;
+}
+
+.second-box{
+    border: 1px solid $primary-color;
+    color: $text-description;
+}
+
+.third-box{
+    border: 1px solid $primary-color;
+    color: $text-important;
+}
+
+.fourth-box{
+    border: 1px solid $primary-color;
+    color: $text-description;
+}
